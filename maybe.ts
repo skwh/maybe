@@ -27,6 +27,8 @@ export function fmapMaybe<A, B>(v: Maybe<A>, func: (a: A) => B, ): Maybe<B> {
   return Just(func(v.value));
 }
 
+// Monad laws: return :: a -> m a
+// Just<T> (above) already does this!
 export function returnMaybe<A>(a: A): Maybe<A> { return Just(a) }
 
 export function bindMaybe<A, B>(v: Maybe<A>, func: (a: A) => Maybe<B>): Maybe<B> {

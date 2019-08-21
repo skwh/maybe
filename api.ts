@@ -49,7 +49,8 @@ export class UsersController {
   }
 
   addUser(values: UserPartial) : boolean {
-    let result = ignoreMaybe(predicateMaybe(
+    let result = ignoreMaybe(
+                      predicateMaybe(
                               fmapMaybe(this.userPartialToUser(values),
                                         this.setUserDefaultRole),
                                         this.validateUserEmail),
