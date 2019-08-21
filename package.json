@@ -1,0 +1,14 @@
+{
+  "name": "maybe",
+  "version": "0.0.1",
+  "description": "maybe",
+  "main": "main.ts",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "Evan Derby <somekidwithhtml@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "typescript": "^3.5.3"
+  }
+}
